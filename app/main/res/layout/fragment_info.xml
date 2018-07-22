@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:stretchColumns="*"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true">
+
+    <TableRow
+        android:id="@+id/row_address"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_address"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/td_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_phone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_phone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/td_phone"
+            android:layout_width="0dp"
+            android:autoLink="phone"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_price"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/td_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_rating"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_rating"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:secondaryProgressTint="#00000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Widget.AppCompat.RatingBar.Small"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_url"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_url"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_url"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/td_url"
+            android:autoLink="web"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_website"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/th_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/th_website"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/td_website"
+            android:autoLink="web"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+    </TableRow>
+
+</TableLayout>
